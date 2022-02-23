@@ -13,6 +13,12 @@ import 'package:firstproject/CircleAvatar.dart';
 import 'package:firstproject/SnackBarStudy.dart';
 import 'package:firstproject/AlertDialogStudy.dart';
 import 'package:firstproject/ListviewStudy.dart';
+import 'package:firstproject/ListviewBuilderStudy.dart';
+import 'package:firstproject/ListviewSeparatorStudy.dart';
+import 'package:firstproject/GridViewBuilder.dart';
+import 'package:firstproject/ListGenerateStudy.dart';
+
+
 void main() {
   runApp(MyApp());
 }
@@ -22,7 +28,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      home: ListviewStudy(),
+      home: ListGenerateStudy(),
     );
   }
 }

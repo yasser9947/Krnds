@@ -15,8 +15,19 @@ class _ListviewStudyState extends State<ListviewStudy> {
         appBar: AppBar(),
         drawer: Drawer(),
         body: Container(
-      
-    )
+          height: 200,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            physics: BouncingScrollPhysics(), 
+            children: [
+              Text("waale"),
+              Container(child: Text("yasir"),color: Colors.yellowAccent, height: 200, width: 100, margin: EdgeInsets.all(10),),
+                Container(child: Text("yasir"),color: Colors.blue, height: 200, width: 100, margin: EdgeInsets.all(10),),
+                  Container(child: Text("yasir"),color: Colors.green, height: 200, width: 100, margin: EdgeInsets.all(10),),
+                    Container(child: Text("yasir"),color: Colors.pink, height: 200, width: 100, margin: EdgeInsets.all(10),)
+            ],
+          ),
+        )
     );
   }
 }
