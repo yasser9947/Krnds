@@ -10,6 +10,15 @@ class TabBarViewStudy extends StatefulWidget {
 class _TabBarViewStudyState extends State<TabBarViewStudy> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return DefaultTabController(length: 2, child: 
+    
+    Scaffold(appBar: AppBar(title: Text("Homepage"),)
+    ,
+    body: TabBarView(children: [
+      Container(child: Text("View 1 "), width: double.infinity, color: Colors.green,),
+      Container(child: Text("View 2 "), width: double.infinity, color: Colors.blue,)
+    ],),
+    )
+    );
   }
 }
