@@ -1,6 +1,8 @@
 // import 'dart:async';
 // import 'dart:ffi';
 
+import 'package:firstproject/section2/AppBarStudy.dart';
+import 'package:firstproject/section2/TabBarViewStudy.dart';
 import 'package:flutter/material.dart';
 import 'package:firstproject/dropdpwnbutton.dart';
 import 'package:firstproject/checboxStudy.dart';
@@ -28,7 +30,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      home: ListGenerateStudy(),
+      home: TabBarViewStudy(),
     );
   }
 }
