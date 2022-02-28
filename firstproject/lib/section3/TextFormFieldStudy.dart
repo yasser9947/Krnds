@@ -63,9 +63,10 @@ class _TextFormFieldStudyState extends State<TextFormFieldStudy> {
             cursorColor: Colors.amber,
             keyboardType: TextInputType.number, // to mak tthe kybors numbers 
             maxLength: 20,
-            obscureText: true, // to type the passworsd
+            obscureText: false, // to type the passworsd
             readOnly: true,
             textInputAction: TextInputAction.search, // شكل الانتر في الكيبورد
+            controller: TextEditingController(text: "yaaasssseeerrr"),
           ),
       ],),
 

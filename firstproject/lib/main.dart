@@ -6,6 +6,13 @@ import 'package:firstproject/section2/BottomNavigationBarStudy.dart';
 import 'package:firstproject/section2/PageViewStudy.dart';
 import 'package:firstproject/section2/TabBarViewStudy.dart';
 import 'package:firstproject/section3/TextFormFieldStudy.dart';
+import 'package:firstproject/section3/TextFormatFieldFunction.dart';
+import 'package:firstproject/section4/one.dart';
+import 'package:firstproject/section4/three.dart';
+import 'package:firstproject/section4/tow.dart';
+import 'package:firstproject/section4/tranPage.dart';
+import 'package:firstproject/section5/ScrollControllerStudy.dart';
+import 'package:firstproject/section5/SliderStudy.dart';
 import 'package:flutter/material.dart';
 import 'package:firstproject/section1/dropdpwnbutton.dart';
 import 'package:firstproject/section1/checboxStudy.dart';
@@ -33,7 +40,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      home: TextFormFieldStudy(),
+      home: ScrollControllerStudy(),
+      routes: {
+        "one" : (context)=> One(), // Navigator
+        "tow" : (context)=> Tow(), // Navigator pushReplacementNamed And pushReplacement
+        "three" : (context)=> Three(),
+      } ,
+
     );
   }
 }
