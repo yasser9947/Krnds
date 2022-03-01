@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:noteapp/auth/login.dart';
+import 'package:noteapp/auth/signup.dart';
+import 'package:noteapp/pages/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +15,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        primaryColor: Colors.red , 
+        buttonColor: Colors.red
+      ),
       home: Login(),
       routes: {
-        "login" : (context) => Login()
+        "login" : (context) => Login() ,
+        "signup" : (context) => SignUp(),
+        "homepage" : (context)=> HomePage()
       },
     );
   }

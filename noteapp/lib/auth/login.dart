@@ -44,7 +44,7 @@ class _LoginState extends State<Login> {
                   child: Row(
                     children: [
                       Text("if you haven't accout "),
-                      InkWell(child: Text("click here", style: TextStyle(color: Colors.blue),), onTap: () => "", )
+                      InkWell(child: Text("click here", style: TextStyle(color: Colors.blue),), onTap: () => Navigator.of(context).pushNamed("signup"), )
                     ],
                   ),
                 )
@@ -52,10 +52,10 @@ class _LoginState extends State<Login> {
                Container(
                  margin:  EdgeInsets.only(top: 15),
                  child: RaisedButton(
-                 color: Colors.blue,
+                //  color: Colors.blue,
                  textColor: Colors.white,
-                 child: Text("تسحيل الدخول" , style: TextStyle(fontSize: 16),),
-                  onPressed: ()=>"",),)
+                 child: Text("  تسحيل الدخول" , style: TextStyle(fontSize: 16),),
+                  onPressed: ()=> Navigator.of(context).pushReplacementNamed("homepage"),),)
             ],
           )),
         )
