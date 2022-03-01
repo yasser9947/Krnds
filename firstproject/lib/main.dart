@@ -12,6 +12,8 @@ import 'package:firstproject/section4/three.dart';
 import 'package:firstproject/section4/tow.dart';
 import 'package:firstproject/section4/tranPage.dart';
 import 'package:firstproject/section5/ScrollControllerStudy.dart';
+import 'package:firstproject/section5/SearchDelegateStudy.dart';
+import 'package:firstproject/section5/ShowModalBottomSheetStudy.dart';
 import 'package:firstproject/section5/SliderStudy.dart';
 import 'package:flutter/material.dart';
 import 'package:firstproject/section1/dropdpwnbutton.dart';
@@ -40,7 +42,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      home: ScrollControllerStudy(),
+      home: SearchDelegateStudy(),
+      debugShowCheckedModeBanner: false,
       routes: {
         "one" : (context)=> One(), // Navigator
         "tow" : (context)=> Tow(), // Navigator pushReplacementNamed And pushReplacement
