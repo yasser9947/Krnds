@@ -16,6 +16,8 @@ import 'package:firstproject/section5/SearchDelegateStudy.dart';
 import 'package:firstproject/section5/ShowModalBottomSheetStudy.dart';
 import 'package:firstproject/section5/SliderStudy.dart';
 import 'package:firstproject/section7/DateTimeStudy.dart';
+import 'package:firstproject/section7/HttpAndApi.dart';
+import 'package:firstproject/section7/imagePicker.dart';
 import 'package:firstproject/section7/jiffyStudy.dart';
 import 'package:flutter/material.dart';
 import 'package:firstproject/section1/dropdpwnbutton.dart';
@@ -44,7 +46,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-      home: JiffyStudy(),
+      home: HttpAndApiStudy(),
       debugShowCheckedModeBanner: false,
       routes: {
         "one" : (context)=> One(), // Navigator
